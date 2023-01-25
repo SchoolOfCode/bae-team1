@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Stats from './Stats/Stats';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +17,19 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Stats
+      colors={['#429F15', '#77C650', '#E9FFE2','#F4FDF1' ]}
+      stats={[
+    {
+      label: 'Diet',
+      value: 25,
+    },
+    {
+      label: 'Commute',
+      value: 75,
+    },
+  ]}/>
     </div>
   );
 }
