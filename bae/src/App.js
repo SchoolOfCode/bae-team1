@@ -1,12 +1,15 @@
-import './App.css';
+
+
 import { useState } from "react"
 import "./Card.css"
 import Card from "./Card"
+
 import "./App.css";
 import "./appStyles.css";
-import Donut from './Donut/Donut';
+import Donut from "./Donut/Donut";
 import logo from "./logo2.png";
-import TreeSection from './TreeSection';
+import avatar from "./avatar2.png";
+import TreeSection from "./TreeSection";
 
 function App() {
 
@@ -54,7 +57,6 @@ return 0.00438
 
   return (
     <div className="App">
-
       <header>
         <img src={logo} alt="logo" className="logo" />
         <h1>
@@ -65,6 +67,7 @@ return 0.00438
         <section id="left">
           <h2>Welcome back, Tre!</h2>
           <section id="quiz">
+
 
        
 
@@ -136,15 +139,21 @@ return 0.00438
 
           </section>
           <section id="trees"><TreeSection></TreeSection></section>
+
         </section>
         <section id="right">
           <section id="profile">
-            <h3>Tre Hugger!</h3>
+            <img src={avatar} alt="avatar" className="avatar" />
+            <h3>Tre Hugger</h3>
+            <h4>Junior Software Engineer</h4>
           </section>
           <section id="co2">
+
                 <Donut dietc02={calculateDietco2}
       colors={['#429F15', '#77C650', '#E9FFE2','#F4FDF1' ]}
    miles={miles} travel={travel} diet={diet}/>
+
+
           </section>
         </section>
       </main>

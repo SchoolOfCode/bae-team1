@@ -37,14 +37,28 @@ h2 {
 }
 
 h3 {
-  color: grey;
+  margin-top: 30px;
+  color: black;
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  color: black;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
 .bold {
   font-weight: 600;
+}
+
+.avatar {
+  margin-top: -200px;
+  height: 280px;
+  border-radius: 50%;
 }
 
 .logo {
@@ -117,7 +131,7 @@ main {
   justify-content: center;
   height: 50%;
   width: 100%;
-  background-color: #e0ffd6;
+  background-color: #a6e392;
   border-radius: 25px;
 }
 
@@ -137,6 +151,6 @@ main {
   justify-content: center;
   height: 50%;
   width: 100%;
-  background-color: #a8cf9b;
+  background-color: #ffffff;
   border-radius: 20px;
 }
