@@ -1,12 +1,17 @@
 #milesInput {
   border-radius: 5px;
+  color: black;
 }
 
 #dietRadio {
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 #progress {
   margin-left: 20px;
+  color: black;
 }
+
+
