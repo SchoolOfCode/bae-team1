@@ -1,0 +1,142 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(23, 21, 21);
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: rgb(23, 21, 21);
+  text-align: left;
+  line-height: 1.5;
+  flex: 1;
+  letter-spacing: 1px;
+}
+h2 {
+  color: grey;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: left;
+}
+
+h3 {
+  color: grey;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin: 0 5px;
+}
+
+main {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 85vh;
+  width: 90vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4fdf1;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px rgb(154, 154, 154);
+  color: rgb(23, 21, 21);
+}
+
+#left {
+  color: rgb(23, 21, 21);
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start;
+  height: 100%;
+  width: 70%;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#right {
+  color: rgb(23, 21, 21);
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  background-color: #e9f9e2;
+  padding: 20px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+#trees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: #e0ffd6;
+  border-radius: 25px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+#co2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: #a8cf9b;
+  border-radius: 20px;
+}
