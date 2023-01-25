@@ -1,31 +1,12 @@
-#card{
-    margin: 20px;
-    min-height: 320px;
-    max-height: 320px;
-    box-shadow: 10px 10px 5px rgb(129, 206, 126);
-    color: black;
-    background-color: #e9ffe2;
-  }
-  
-  #card2{
-    margin: 20px;
-    min-height: 320px;
-    max-height: 320px;
-    box-shadow: 10px 10px 5px rgb(129, 206, 126);
-    color: black;
-    background-color: #e9ffe2;
-  }
-  
-  #milesInput {
-    border-radius: 5px
-  }
-  
-  #dietRadio{
-    display: flex;
-    flex-direction: column;
-    
-  }
+#milesInput {
+  border-radius: 5px;
+}
 
-  #progress {
-    margin-left: 20px;
-  }
+#dietRadio {
+  display: flex;
+  flex-direction: column;
+}
+
+#progress {
+  margin-left: 20px;
+}
