@@ -2,7 +2,7 @@ import DonutChart from 'react-donut-chart';
 
 // things I would never do:
 
-export default function Stats({stats, colors}){
+export default function Donut({stats, colors}){
     return (
       <div>
     <DonutChart

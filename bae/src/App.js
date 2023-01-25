@@ -1,5 +1,5 @@
 import './App.css';
-import Stats from './Stats/Stats';
+import Donut from './Donut/Donut';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </a>
       </header>
 
-      <Stats
+      <Donut
       colors={['#429F15', '#77C650', '#E9FFE2','#F4FDF1' ]}
       stats={[
     {
