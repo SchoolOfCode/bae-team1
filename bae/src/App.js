@@ -1,5 +1,6 @@
 import "./App.css";
 import "./appStyles.css";
+import Donut from './Donut/Donut';
 import logo from "./logo2.png";
 
 function App() {
@@ -21,7 +22,20 @@ function App() {
           <section id="profile">
             <h3>Tre Hugger!</h3>
           </section>
-          <section id="co2">Co2 will go here!</section>
+          <section id="co2">
+                <Donut
+      colors={['#429F15', '#77C650', '#E9FFE2','#F4FDF1' ]}
+      stats={[
+    {
+      label: 'Diet',
+      value: 25,
+    },
+    {
+      label: 'Commute',
+      value: 75,
+    },
+  ]}/>
+          </section>
         </section>
       </main>
     </div>
