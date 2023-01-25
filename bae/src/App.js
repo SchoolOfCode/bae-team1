@@ -41,7 +41,15 @@ function calculateDiet(diet){
 
 //**to do please**
 function calculateCommute(travel, miles){
-return 1000000
+  if (travel ==='Car'){
+    return (0.03/100)*miles
+  }
+  if (travel ==='Public Transport'){
+    return (0.011/100)*miles
+  }
+  if (travel ==='Motorbike'){
+    return (0.01/100)*miles
+  }
 }
 
 function transport(event){
@@ -58,7 +66,7 @@ setMiles(event.target.value)
 }
 
 
-  return (
+return (
     <div className="App">
       <header>
         <img src={logo} alt="logo" className="logo" />
@@ -76,7 +84,7 @@ setMiles(event.target.value)
        <div>
        {page===0 ? <>
        <progress id="progress" className="progress progress-success w-56" value="10" max="100"></progress>
-        <div className="card w-96 bg-primary text-primary-content"  id="card">
+        <div className="card w-96 bg-accent text-primary-content"  id="card">
   <div className="card-body ">
     <h2 className="card-title">How do you commute to work?</h2>
     <div >
@@ -117,7 +125,7 @@ setMiles(event.target.value)
        <progress id="progress" className="progress progress-success w-56" value="10" max="100"></progress>
         <div className="card w-96 bg-primary text-primary-content"  id="card">
   <div className="card-body ">
-    <h2 className="card-title">Thank you for completing the quiz?</h2>
+    <h2 className="card-title">Thank you for completing the quiz!</h2>
    
     {/* <p>How many miles is your commute?</p> */}
     {/* <input id="milesInput"placeholder="In Miles"/> */}
@@ -137,7 +145,7 @@ setMiles(event.target.value)
 
           </section>
           <section id="trees">
-            <TreeSection></TreeSection>
+            <TreeSection commute={calculateCommute(travel,miles)} diet={calculateDiet(diet)}></TreeSection>
           </section>
         </section>
         <section id="right">
@@ -152,11 +160,11 @@ setMiles(event.target.value)
               stats={[
                 {
                   label: "Diet",
-                  value: calculateDiet(diet),
+                  value: (1000*(calculateDiet(diet))),
                 },
                 {
                   label: "Commute",
-                  value: calculateCommute(travel, miles),
+                  value: 1000*(calculateCommute(travel, miles)),
                 },
               ]}
             />

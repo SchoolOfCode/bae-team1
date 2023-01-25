@@ -20,10 +20,10 @@ export default function Donut({ stats, colors }) {
       {stats.map((stat, index) => (
         <p
           style={{ color: colors[index] }}
-        >{`${stat.label} ${stat.value}kg`}</p>
+        >{`${stat.label} ${stat.value.toFixed(2)}kg`}</p>
       ))}
       <p>
-        Yesterday, you used {stats.reduce((total, obj) => obj.value + total, 0)}
+        Yesterday, you used {stats.reduce((total, obj) => obj.value + total, 0).toFixed(2)}
         kg of carbon.
       </p>
     </div>
