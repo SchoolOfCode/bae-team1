@@ -1,9 +1,10 @@
+
 import Card from "./Card"
 import "./App.css";
 import "./appStyles.css";
 import Donut from './Donut/Donut';
 import logo from "./logo2.png";
-
+import TreeSection from './TreeSection';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <section id="left">
           <h2>Welcome back, Tre!</h2>
           <section id="quiz"> <Card/></section>
-          <section id="trees">Trees will go here!</section>
+          <section id="trees"><TreeSection></TreeSection></section>
         </section>
         <section id="right">
           <section id="profile">
@@ -41,7 +42,6 @@ function App() {
           </section>
         </section>
       </main>
-
     </div>
   );
 }
