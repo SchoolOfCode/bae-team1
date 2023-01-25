@@ -1,11 +1,14 @@
+import Card from "./Card"
 import "./App.css";
 import "./appStyles.css";
 import Donut from './Donut/Donut';
 import logo from "./logo2.png";
 
+
 function App() {
   return (
     <div className="App">
+
       <header>
         <img src={logo} alt="logo" className="logo" />
         <h1>
@@ -15,7 +18,7 @@ function App() {
       <main>
         <section id="left">
           <h2>Welcome back, Tre!</h2>
-          <section id="quiz">Quiz will go here!</section>
+          <section id="quiz"> <Card/></section>
           <section id="trees">Trees will go here!</section>
         </section>
         <section id="right">
@@ -38,6 +41,7 @@ function App() {
           </section>
         </section>
       </main>
+
     </div>
   );
 }
